@@ -22,15 +22,21 @@
         <div class="card">
           <div class="card-header">
             <ul>
-              <li>Detect Language</li>
-              <li>English</li>
-              <li>French</li>
-              <li>Spanish</li>
+              <button class="detect-language">Detect Language</button>
+              <button class="language-selected">English</button>
+              <button class="language">French</button>
+              <select class="language" name="language" id="language">
+                <option value="es">Spanish</option>
+                <option value="ge">German</option>
+              </select>
             </ul>
           </div>
           <hr>
           <div class="card-body">
-
+            <div>
+              <textarea name="" id="originText" class="inputOriginText"  autocapitalize="off" autocomplete="off" autocorrect="off"></textarea>
+              <div class="text-show text-l">texto para traducir</div>
+            </div>
           </div>
           <div class="card-footer">
 
@@ -39,14 +45,17 @@
         <div class="card">
           <div class="card-header">
             <ul>
-              <li>English</li>
-              <li>French</li>
-              <li>Spanish</li>
+              <button class="language">English</button>
+              <button class="language-selected">French</button>
+              <select class="language" name="language" id="language">
+                  <option value="es">Spanish</option>
+                  <option value="ge">German</option>
+              </select>
             </ul>
           </div>
           <hr>
           <div class="card-body">
-
+            <span></span>
           </div>
           <div class="card-footer">
             

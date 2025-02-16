@@ -36,12 +36,12 @@ body {
   gap: 2rem;
 }
 .card {
-  width: 35vw;
+  width: 47vw;
   height: 45vh;
   border: 1px #394150 solid ;
   border-radius: 2rem;
   opacity: 92%;
-  background: linear-gradient(90deg, #121826,#040711);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
+  background: linear-gradient(90deg, #121826,#040711);                                             
 }
 .card-header {
   height: 3rem;
@@ -57,4 +57,78 @@ ul {
   gap: 1rem;
   justify-content: start;
   margin: 2rem 0 0 4rem;
+}
+
+.inputOriginText {
+  height: 224px;
+  font-size: 24px;
+  background: transparent;
+  border: none;
+  color: rgb(60, 64, 67);
+  flex: 1;
+  font-family: inherit;
+  overflow: auto hidden;
+  padding: 0;
+  resize: none;
+  white-space: pre-wrap;
+  width: 100%;
+  z-index: 2;
+  color: #F9FAFB;
+}
+
+.text-l {
+  display: none;
+  max-height: 57px;
+}
+
+.text-show {
+  margin: 0;
+  overflow: hidden;
+  visibility: hidden;
+  white-space: pre-wrap;
+  z-index: 1;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+.language-selected {
+  background-color: #4D5562;
+  padding: .5rem;
+  border-radius: 10px;
+  opacity: 75%;
+  color: #FFF;
+  border: transparent;
+  cursor: pointer;
+}
+.language {
+  background-color: transparent;
+  padding: .5rem;
+  border-radius: 10px;
+  opacity: 75%;
+  color: #FFF;
+  border: transparent;
+  cursor: pointer;
+}
+.language:hover {
+  background-color: #4D5562;
+}
+.detect-language {
+  background-color: transparent;
+  border: transparent;
+  color: #FFF;
+  cursor: pointer;
+}
+select, ::picker(select) {
+  appearance: base-select;
+}
+@media (max-width: 1100px){
+  .main {
+    height: auto;
+  }
+  .cards {
+    flex-direction: column;
+  }
+  .card {
+    width: 90vw;
+  }
 }
