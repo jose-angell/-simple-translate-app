@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
 }
 
 body {
@@ -56,9 +57,11 @@ ul {
   display: flex;
   gap: 1rem;
   justify-content: start;
-  margin: 2rem 0 0 4rem;
+  margin: 2rem 0 0 2.8rem;
 }
-
+.ul-language {
+  justify-content: space-between;
+}
 .inputOriginText {
   height: 224px;
   font-size: 24px;
@@ -68,12 +71,13 @@ ul {
   flex: 1;
   font-family: inherit;
   overflow: auto hidden;
-  padding: 0;
+  padding: 0 2rem;
   resize: none;
   white-space: pre-wrap;
   width: 100%;
   z-index: 2;
   color: #F9FAFB;
+  outline:none;
 }
 
 .text-l {
@@ -99,6 +103,7 @@ ul {
   color: #FFF;
   border: transparent;
   cursor: pointer;
+  font-size: .875rem;
 }
 .language {
   background-color: transparent;
@@ -108,6 +113,7 @@ ul {
   color: #FFF;
   border: transparent;
   cursor: pointer;
+  font-size: .875rem;
 }
 .language:hover {
   background-color: #4D5562;
@@ -117,10 +123,71 @@ ul {
   border: transparent;
   color: #FFF;
   cursor: pointer;
+  font-family: "DM Sans", sans-serif;
+  font-size: .875rem;
 }
 select, ::picker(select) {
   appearance: base-select;
 }
+option {
+  background-color: #121826CC;
+}
+
+.text-translated {
+  height: 250px;
+}
+
+.buttons-traslate {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.translate-botton {
+  background-color: #263FA9;
+  border: 1px solid #7CA9F3;
+  border-radius: 1rem;
+  padding: .7rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
+  font-size: 1rem;
+  color: #F9FAFB;
+  opacity: 75%;
+  gap: 1rem
+}
+.copy-sound {
+  display: flex;
+  gap: 1rem;
+  margin-left: 2rem;
+}
+.sound, .copy,.horizontal-top-left {
+  background-color: transparent;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 2px solid #D2D5DA;
+  border-radius: .8rem;
+  opacity: 50%;
+  cursor: pointer;
+}
+
+.sound:hover, .copy:hover, .horizontal-top-left:hover {
+  opacity: 100%;
+}
+.horizontal-top-left {
+  margin-right: 2rem;
+}
+.counterchart {
+  font-size: .75rem;
+  color: #D2D5DA;
+  text-align: end;
+  margin-right: 2rem;
+  margin-bottom: .5rem;
+}
+
+
+
 @media (max-width: 1100px){
   .main {
     height: auto;
