@@ -24,10 +24,10 @@
         <div class="card">
           <div class="card-header">
             <ul>
-              <button class="detect-language">Detect Language</button>
-              <button class="language-selected">English</button>
-              <button class="language">French</button>
-              <select class="language" name="language" id="language">
+              <button id="DetectLanguage" class="detect-language">Detect Language</button>
+              <button id="originTextEnglish" value="en" class="language-selected">English</button>
+              <button id="originTextFrench" value="fr" class="language">French</button>
+              <select id="originTextSelect" class="language" name="language" id="language">
                 <option value="es">Spanish</option>
                 <option value="ge">German</option>
               </select>
@@ -47,7 +47,7 @@
                 <button class="sound"><img src="resources/sound_max_fill.svg" alt="copy"></button>
                 <button class="copy"><img src="resources/Copy.svg"></img></button>
               </div>
-              <button class="translate-botton"><img src="resources/Sort_alfa.svg" alt="alfa"> Translate</button>
+              <button id="translatebutton" class="translate-botton"><img src="resources/Sort_alfa.svg" alt="alfa"> Translate</button>
             </div>
           </div>
         </div>
@@ -55,22 +55,22 @@
           <div class="card-header">
             <ul class="ul-language">
               <div >
-                <button class="language">English</button>
-                <button class="language-selected">French</button>
-                <select class="language" name="language" id="language">
+                <button id="resultTextEnglish" value="en" class="language">English</button>
+                <button id="resultTextFrench" value="fr" class="language-selected">French</button>
+                <select id="resultTextSelect" class="language" name="language" id="language">
                   <option value="es">Spanish</option>
                   <option value="ge">German</option>
                 </select>
               </div>
               <div class="horizontal-container">
-                <button class="horizontal-top-left"><img src="resources/Horizontal_top_left_main.svg" alt=""></button>
+                <button id="swapLanguage" class="horizontal-top-left"><img src="resources/Horizontal_top_left_main.svg" alt=""></button>
               </div>
             </ul>
           </div>
           <hr>
           <div class="card-body">
             <div class="text-translated">
-              <span></span>
+              <span id="textResult">hello</span>
             </div>
           </div>
           <div class="card-footer">
@@ -90,5 +90,6 @@
         >devChallenges.io</a
       >.
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
