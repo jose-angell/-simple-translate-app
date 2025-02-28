@@ -79,7 +79,15 @@ ul {
   color: #F9FAFB;
   outline:none;
 }
-
+#textResult {
+  font-size: 24px;
+  flex: 1;
+  font-family: inherit;
+  overflow: auto hidden;
+  padding: 0 2rem;
+  white-space: pre-wrap;
+  color: #F9FAFB;
+}
 .text-l {
   display: none;
   max-height: 57px;
@@ -155,7 +163,17 @@ option {
   font-size: 1rem;
   color: #F9FAFB;
   opacity: 75%;
-  gap: 1rem
+  gap: 1rem;
+  cursor: pointer;
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+.translate-botton:hover {
+  opacity: 150%;
+}
+
+.translate-botton:active {
+  transform: scale(0.95); /* Hace que el botón parezca hundirse */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 .copy-sound {
   display: flex;
