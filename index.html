@@ -29,19 +29,19 @@
               <button id="originTextFrench" value="fr" class="language">French</button>
               <select id="originTextSelect" class="language" name="language" id="language">
                 <option value="es">Spanish</option>
-                <option value="ge">German</option>
+                <option value="de">German</option>
               </select>
             </ul>
           </div>
           <hr>
           <div class="card-body">
             <div>
-              <textarea name="" id="originText" class="inputOriginText"  autocapitalize="off" autocomplete="off" autocorrect="off"></textarea>
+              <textarea name="" id="originText" class="inputOriginText" maxlength="500"  autocapitalize="off" autocomplete="off" autocorrect="off"></textarea>
               <div class="text-show text-l">texto para traducir</div>
             </div>
           </div>
           <div class="card-footer">
-            <div class="counterchart">0/500</div>
+            <div class="counterchart"  id="charCount">0/500</div>
             <div class="buttons-traslate">
               <div class="copy-sound">  
                 <button class="sound"><img src="resources/sound_max_fill.svg" alt="copy"></button>
@@ -59,7 +59,7 @@
                 <button id="resultTextFrench" value="fr" class="language-selected">French</button>
                 <select id="resultTextSelect" class="language" name="language" id="language">
                   <option value="es">Spanish</option>
-                  <option value="ge">German</option>
+                  <option value="de">German</option>
                 </select>
               </div>
               <div class="horizontal-container">
