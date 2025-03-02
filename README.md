@@ -37,26 +37,19 @@
 <!-- OVERVIEW -->
 
 ## Overview
-
+Este proyecto es una aplicacion basica de traduccion, se implementa la api mymemory.translated.net para realizar las traducciones. la aplicacion realiza una traduccion basica y solo permite 500 caracteres por solicitud.
 ![screenshot](screenshot.png)
 
-<!--
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
-- What have you learned/improved?
-- Your wisdom? :)
--->
 
 ### What I learned
 
-<!-- Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge. -->
-
+ En este proyecto tube la oportunidad de practicar el uso de api's, y de poner en practicas algunos recursos de accesibilidad
+que ayudan a la navegacion de pagina
 ### Useful resources
 
-<!--
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
--->
+- [w3schools](https://www.w3schools.com/html/html_accessibility.asp) - Este tutorial contine informacion sobre accesibilidad en aplicaciones we
+
 
 ### Built with
 
